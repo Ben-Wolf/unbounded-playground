@@ -3,6 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    compress: true,
+    hot: true,
+    port: 8080
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   module: {
     rules: [
       {

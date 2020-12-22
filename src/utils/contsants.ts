@@ -1,0 +1,1 @@
+export const lightPurpleHex = '#DCD0FF';
